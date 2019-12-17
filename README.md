@@ -6,11 +6,13 @@ The PLAYER must control the squirrel to collect acorns in a hurry before winter 
 
 Climbing trees, hiding behind bushes, day-night, foxes, owls, eagles, stamina, using acorns as weapons, moving trees, carry acorns, storing acorns, power-ups, pooping, teasing, etc, are all added "bugs" and will be included as development goes.
 
+![Concept from 2hr brainstorm](https://github.com/NicolaasJKotze/squirrel_dash/blob/master/documentation/Concept_Alpha.png)
+
 # Tools
-Godot
+* Godot
+* Krita / Paint.net
+* Audacity
+* Discord
 
-Krita / Paint.net
-
-Audacity
-
-Discord
+# References
+* GitHub Markdown : https://guides.github.com/features/mastering-markdown/
