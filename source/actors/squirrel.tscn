@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://actors/player.gd" type="Script" id=1]
+[ext_resource path="res://sprites/Squirrel_Run.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 51.0
+height = 62.0
+
+[node name="player" type="KinematicBody2D"]
+position = Vector2( 123, 502 )
+collision_mask = 8
+script = ExtResource( 1 )
+speed = Vector2( 100, 1500 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, -1 )
+shape = SubResource( 1 )
+
+[node name="Squirrel_Run" type="Sprite" parent="."]
+position = Vector2( -2, 4 )
+scale = Vector2( 0.652381, 0.652381 )
+texture = ExtResource( 2 )
