@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://level.gd" type="Script" id=1]
 [ext_resource path="res://sprites/forest-1.png" type="Texture" id=2]
 [ext_resource path="res://actors/squirrel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://sprites/ground_01.jpg" type="Texture" id=4]
-[ext_resource path="res://music/forest.wav" type="AudioStream" id=5]
+[ext_resource path="res://music/forest.ogg" type="AudioStream" id=5]
+[ext_resource path="res://music/Forest_Ambience.ogg" type="AudioStream" id=6]
 
 [sub_resource type="TileSet" id=5]
 0/name = "forest-1.png 0"
@@ -100,7 +101,12 @@ collision_mask = 8
 format = 1
 tile_data = PoolIntArray( -196598, 2, 0, 65546, 2, 0, 327688, 1, 0, 589821, 0, 0, 524289, 0, 0, 524294, 0, 0, 524296, 0, 0, 524299, 0, 0, 524303, 0, 0 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Background_Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 volume_db = -23.704
+autoplay = true
+
+[node name="Background_ForestNoises" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -3.607
 autoplay = true

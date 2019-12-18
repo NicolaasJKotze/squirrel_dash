@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="SquirrelDash"
-run/main_scene="res://actors/squirrel.tscn"
+run/main_scene="res://level.tscn"
 boot_splash/image="res://images/splash.png"
 config/icon="res://icon.png"
 
