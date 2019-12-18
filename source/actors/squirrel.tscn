@@ -4,20 +4,20 @@
 [ext_resource path="res://sprites/Squirrel_Run.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 51.0
-height = 62.0
+radius = 19.0
+height = 18.0
 
 [node name="player" type="KinematicBody2D"]
-position = Vector2( 123, 502 )
+position = Vector2( 124, 502 )
 collision_mask = 8
 script = ExtResource( 1 )
 speed = Vector2( 100, 1500 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1, -1 )
+position = Vector2( 5, -1 )
 shape = SubResource( 1 )
 
 [node name="Squirrel_Run" type="Sprite" parent="."]
-position = Vector2( -2, 4 )
-scale = Vector2( 0.652381, 0.652381 )
+position = Vector2( 4.625, -0.229519 )
+scale = Vector2( 0.275, 0.275 )
 texture = ExtResource( 2 )
