@@ -9,3 +9,8 @@ func _process(delta):
         timer = 0.0
         print("fps: " + str(Engine.get_frames_per_second()))
 
+func _ready():
+	get_node("HUD/btnMainMenu").connect("pressed", self, "_on_btnMainMenu_pressed")
+
+func _on_btnMainMenu_pressed():
+	get_tree().change_scene("res://MainMenu.tscn")
